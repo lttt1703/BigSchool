@@ -22,3 +22,27 @@ select,
 textarea {
     max-width: 280px;
 }
+.navbar-inverse{
+    background-color: #00ff21;
+    border-color: #ffffff;
+}
+.navbar-inverse .navbar-nar > li > a {
+    color: #ffd800;
+}
+.navbar-inverse .navbar-brand {
+    color : blueviolet;
+}
+.course {
+    list-style:none;
+}
+.course > li .date {
+    text-align: center;
+    background-color : #129296;
+    width: 60px;
+    border-radius: 8px;
+}
+.course > li .details {
+    position:absolute;
+    margin-top:-35px;
+    margin-left:80px;  
+}
