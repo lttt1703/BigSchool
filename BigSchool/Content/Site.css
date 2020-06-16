@@ -22,27 +22,32 @@ select,
 textarea {
     max-width: 280px;
 }
-.navbar-inverse{
-    background-color: #00ff21;
-    border-color: #ffffff;
+.navbar-inverse {
+    background-color: #d41d50;
+    border-color: #fbf6f6;
 }
 .navbar-inverse .navbar-nar > li > a {
-    color: #ffd800;
+    color: white;
 }
 .navbar-inverse .navbar-brand {
-    color : blueviolet;
+    color : white;
 }
 .course {
-    list-style:none;
+    list-style: none;
+}
+.course > li {
+    position : relative;
+    margin-bottom: 30px;
 }
 .course > li .date {
     text-align: center;
-    background-color : #129296;
+    background-color : #d41d50;
+    color: white;
     width: 60px;
     border-radius: 8px;
 }
 .course > li .details {
     position:absolute;
-    margin-top:-35px;
-    margin-left:80px;  
+    top: 0;
+    left: 70px;
 }
