@@ -33,6 +33,8 @@ namespace BigSchool.Controllers
 
             _dbContext.Followings.Add(folowing);
             _dbContext.SaveChanges();
+
+            return Ok();
         }
     }
 }
