@@ -22,13 +22,26 @@
                     {
                         <button data-course-id="@course.LecturerId" class="btn btn-default btn-sm js-toggle-follow">Follow</button>
                     }
-                </span>
+                </span> <br />
                 <span class="category">
                     @course.Category.Name
                 </span>
                 @if (Model.ShowAction)
                 {
                     <button data-course-id="@course.Id" class="btn btn-default btn-sm js-toggle-attendance">Going?</button>
+                    @*var User_ID = @User.Identity.GetUserId();
+                    ApplicationDbContext _dbContext = new ApplicationDbContext();
+                    bool isGoing = _dbContext.Attendances.Any(a => a.CourseId == course.Id && a.AttendeeId == User_ID);
+                    <div>
+                        @if (!isGoing)
+                        {
+                            <button data-course-id="@course.Id" class="btn btn-default btn-sm js-toggle-attendance">Going?</button>
+                        }
+                        else
+                        {
+                            <span class="text-danger">Đã tham gia</span>
+                        }
+                    </div>*@
                 }
             </div>
         </li>
